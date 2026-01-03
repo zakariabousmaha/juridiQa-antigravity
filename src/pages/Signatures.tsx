@@ -1,6 +1,5 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { FileSignature, Clock, CheckCircle, XCircle, Plus, FileText } from 'lucide-react';
+import { Clock, CheckCircle, XCircle, Plus, FileText } from 'lucide-react';
 
 export default function Signatures() {
     const { t } = useTranslation();
@@ -30,7 +29,7 @@ export default function Signatures() {
                         <div className="flex items-center justify-between mb-4">
                             <h3 className="font-semibold text-brand-navy capitalize">{t(`signatures.status_${status}`)}</h3>
                             <div className={`p-2 rounded-full ${status === 'signed' ? 'bg-green-100 text-green-600' :
-                                    status === 'pending' ? 'bg-yellow-100 text-yellow-600' : 'bg-red-100 text-red-600'
+                                status === 'pending' ? 'bg-yellow-100 text-yellow-600' : 'bg-red-100 text-red-600'
                                 }`}>
                                 {status === 'signed' ? <CheckCircle className="h-4 w-4" /> :
                                     status === 'pending' ? <Clock className="h-4 w-4" /> : <XCircle className="h-4 w-4" />}
@@ -74,7 +73,7 @@ export default function Signatures() {
                                     </td>
                                     <td className="px-6 py-4">
                                         <span className={`px-2 py-1 rounded-full text-xs font-medium ${doc.status === 'signed' ? 'bg-green-100 text-green-700' :
-                                                doc.status === 'pending' ? 'bg-yellow-100 text-yellow-700' : 'bg-red-100 text-red-700'
+                                            doc.status === 'pending' ? 'bg-yellow-100 text-yellow-700' : 'bg-red-100 text-red-700'
                                             }`}>
                                             {t(`signatures.status_${doc.status}`)}
                                         </span>

@@ -1,6 +1,5 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { TrendingUp, AlertCircle, FileText, CheckCircle } from 'lucide-react';
+import { TrendingUp, AlertCircle, FileText } from 'lucide-react';
 
 export default function Dashboard() {
     const { t } = useTranslation();

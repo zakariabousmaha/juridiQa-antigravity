@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { LayoutDashboard, FileText, Scale, Users, FileSignature, Settings, LogOut, Bot } from 'lucide-react';

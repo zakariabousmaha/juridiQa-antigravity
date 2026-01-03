@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Outlet, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Menu, X, Globe, Scale } from 'lucide-react';
-import clsx from 'clsx';
 
 export default function PublicLayout() {
     const { t, i18n } = useTranslation();
